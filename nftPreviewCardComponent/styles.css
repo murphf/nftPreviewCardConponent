@@ -1,0 +1,60 @@
+*{
+	background-color: hsl(217, 54%, 11%);
+}
+
+footer
+{
+	color: hsl(178, 100%, 50%);
+}
+
+a
+{
+	color: hsl(178, 29%, 40%) !important;
+}
+
+main
+{
+	width: 25rem ;
+	height: 35rem;
+	/*background-color: hsl(216, 50%, 16%);*/
+	background-color: white;
+	margin: auto;
+	margin-top: 100px;
+
+}
+.title
+{
+	background-color: white;
+}
+p
+{
+	background-color: white;
+}
+.description
+{
+	background-color: white;
+}
+
+.ethImage
+{
+	width: 20rem;
+	background-color: white;
+	/*padding*/
+}
+
+#first
+{
+	background-color: white;
+}
+
+#second
+{
+	background-color: white;
+}
+
+footer
+{
+	/*position: absolute;*/
+	margin-top: 50px;
+	text-align: center;
+}
