@@ -92,13 +92,14 @@ footer
 }
 .creatorImage
 {
-	padding-top: 2%;
-	padding-left: 10%;
+	/* padding-top: 2%; */
+	/* padding-left: 10%; */
 	width: 35px;
 	height: 35px;
 	background-color: hsl(216, 50%, 16%);
 	border-radius: 50%;
 	border: 2px solid white;
+	margin-left: 10%;
 }
 
 #details
