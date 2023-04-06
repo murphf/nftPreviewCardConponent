@@ -15,7 +15,7 @@ a
 main
 {
 	width: 25rem ;
-	height: 40rem;
+	height: 43rem;
 	/*background-color: hsl(216, 50%, 16%);*/
 	background-color: hsl(216, 50%, 16%);
 	margin: auto;
@@ -28,6 +28,20 @@ main
 	padding-left: 10%;
 	background-color: hsl(216, 50%, 16%);
 	color: white;
+	font-family: Outfit;
+	font-size: 600;
+}
+
+
+
+.title:hover
+{
+	color: hsl(178, 100%, 50%);
+}
+
+.ethImage:hover 
+{
+	filter: sepia(100%) hue-rotate(160deg) saturate(500%);
 }
 
 p
@@ -38,8 +52,10 @@ p
 .description
 {
 	padding-left: 10%;
-	color: white;
+	color:  hsl(215, 51%, 70%);
 	background-color: hsl(216, 50%, 16%);
+	font-family: Outfit;
+	font-size: 400;
 }
 
 .ethImage
@@ -50,7 +66,6 @@ p
   	display: block;
 	width: 22rem;
 	background-color: hsl(216, 50%, 16%);
-
 	/*padding*/
 }
 
@@ -74,9 +89,11 @@ p
 {
 	display: flex;
 	justify-content: start;
+	margin-top: 5%;
 	background-color: hsl(216, 50%, 16%);
 	border-radius: 1rem;
 	color: hsl(215, 51%, 70%);
+	font-family: Outfit;
 }
 
 #bottom .creatorName
@@ -115,11 +132,14 @@ footer
 {
 	padding-left: 10px;
 	color: hsl(178, 100%, 50%);
+	font-family: Outfit;
+	font-weight: bold;
 }
 
 #details p.countdown
 {
 	color:  hsl(215, 51%, 70%);
+	font-weight: normal;
 }
 
 .price
@@ -150,4 +170,9 @@ footer
 	background-color:  hsl(216, 50%, 16%);
 	width: 25px;
 	height: 25px;
+}
+
+.line {
+	width: 20rem;
+	border-color: hsl(217, 49%, 8%) ; 
 }
