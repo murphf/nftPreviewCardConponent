@@ -1,28 +1,59 @@
+
 *{
 	background-color: hsl(217, 54%, 11%);
 }
 
-footer
-{
-	color: hsl(178, 100%, 50%);
-}
+
 
 a
 {
 	color: hsl(178, 29%, 40%) ;
 }
 
+/* card skeleton */
 main
 {
 	width: 25rem ;
 	height: 43rem;
-	/*background-color: hsl(216, 50%, 16%);*/
 	background-color: hsl(216, 50%, 16%);
 	margin: auto;
 	margin-top: 100px;
 	border-radius: 1rem;
 
 }
+
+/*---- image part ----*/
+#first
+{
+	padding-top: 2%;
+	border-radius: 1rem;
+	background-color: hsl(216, 50%, 16%);
+}
+
+/* principal image */
+.ethImage
+{
+	margin: 5% auto 0 auto;
+	border-radius: 1rem;
+  	display: block;
+	width: 22rem;
+	background-color: hsl(216, 50%, 16%);
+}
+
+/* hovering effect: blue filter + svg icon (??)*/
+.ethImage:hover 
+{
+	filter: brightness(121%) contrast(70%) hue-rotate(122deg) saturate(127%) grayscale(36%) sepia(60%) url(#svgTint);
+	position: relative;
+}
+
+/*---- title + text ----*/
+#second
+{
+	background-color:hsl(216, 50%, 16%);
+}
+
+/* Equilibrium title */
 .title
 {
 	padding-left: 10%;
@@ -32,23 +63,17 @@ main
 	font-size: 600;
 }
 
-
-
-.title:hover
-{
+.title:hover, #bottom .creatorName:hover {
 	color: hsl(178, 100%, 50%);
-}
+  }
 
-.ethImage:hover 
-{
-	filter: sepia(100%) hue-rotate(160deg) saturate(500%);
-}
-
+/* all <p> elements */
 p
 {
 	background-color: hsl(216, 50%, 16%);
 }
 
+/* principal text */
 .description
 {
 	padding-left: 10%;
@@ -58,67 +83,7 @@ p
 	font-size: 400;
 }
 
-.ethImage
-{
-	padding: 5%;
-	border-radius: 2rem;
-	margin: auto;
-  	display: block;
-	width: 22rem;
-	background-color: hsl(216, 50%, 16%);
-	/*padding*/
-}
-
-#first
-{
-	border-radius: 1rem;
-	background-color: hsl(216, 50%, 16%);
-}
-
-#second
-{
-	background-color:hsl(216, 50%, 16%);
-}
-
-.creator
-{
-	padding-left:10%;
-}
-
-#bottom
-{
-	display: flex;
-	justify-content: start;
-	margin-top: 5%;
-	background-color: hsl(216, 50%, 16%);
-	border-radius: 1rem;
-	color: hsl(215, 51%, 70%);
-	font-family: Outfit;
-}
-
-#bottom .creatorName
-{
-	color: white;
-}
-
-footer
-{
-	/*position: absolute;*/
-	margin-top: 50px;
-	text-align: center;
-}
-.creatorImage
-{
-	/* padding-top: 2%; */
-	/* padding-left: 10%; */
-	width: 35px;
-	height: 35px;
-	background-color: hsl(216, 50%, 16%);
-	border-radius: 50%;
-	border: 2px solid white;
-	margin-left: 10%;
-}
-
+/*----- price + countdown -----*/
 #details
 {
 	display: flex;
@@ -142,6 +107,7 @@ footer
 	font-weight: normal;
 }
 
+
 .price
 {
 	display: flex;
@@ -157,7 +123,6 @@ footer
 	background-color:  hsl(216, 50%, 16%);
 }
 
-/* disp*/
 .ethIcone
 {
 	padding-top: 10px;
@@ -178,3 +143,73 @@ footer
 	width: 20rem;
 	border-color: hsl(217, 49%, 8%) ; 
 }
+
+/*---- creation of part ----*/
+#bottom
+{
+	display: flex;
+	justify-content: start;
+	margin-top: 5%;
+	background-color: hsl(216, 50%, 16%);
+	border-radius: 1rem;
+	color: hsl(215, 51%, 70%);
+	font-family: Outfit;
+}
+
+#bottom .creatorName
+{
+	color: white;
+}
+
+.creationOf
+{
+	padding-left:10%;
+}
+
+.creatorImage
+{
+	width: 35px;
+	height: 35px;
+	background-color: hsl(216, 50%, 16%);
+	border-radius: 50%;
+	border: 2px solid white;
+	margin-left: 10%;
+}
+
+/*--- footer part ---*/
+footer
+{
+	/*position: absolute;*/
+	margin-top: 50px;
+	text-align: center;
+	color: hsl(178, 100%, 50%);
+}
+
+/* responsiveness manipulation */
+/* @media (max-width: 767px) {
+	main {
+	  width: auto;
+	  height: auto;
+	  margin-top: 50px;
+	  padding: 5%;
+	}
+	
+	.ethImage {
+	  width: 90%;
+	  margin: 5% auto 0 auto;
+	}
+	
+	.description {
+	  font-size: 300;
+	}
+	
+	.creatorImage {
+	  width: 20px;
+	  height: 20px;
+	  margin-left: 5%;
+	}
+	
+	#details p {
+	  font-size: 300;
+	}
+  } */
