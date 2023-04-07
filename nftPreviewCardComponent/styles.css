@@ -15,9 +15,9 @@ a
 main
 {
 	width: 25rem ;
-	height: 40rem;
+	height: 43rem;
 	/*background-color: hsl(216, 50%, 16%);*/
-	background-color: white;
+	background-color: hsl(216, 50%, 16%);
 	margin: auto;
 	margin-top: 100px;
 	border-radius: 1rem;
@@ -26,16 +26,36 @@ main
 .title
 {
 	padding-left: 10%;
-	background-color: white;
+	background-color: hsl(216, 50%, 16%);
+	color: white;
+	font-family: Outfit;
+	font-size: 600;
 }
+
+
+
+.title:hover
+{
+	color: hsl(178, 100%, 50%);
+}
+
+.ethImage:hover 
+{
+	filter: sepia(100%) hue-rotate(160deg) saturate(500%);
+}
+
 p
 {
-	background-color: white;
+	background-color: hsl(216, 50%, 16%);
 }
+
 .description
 {
 	padding-left: 10%;
-	background-color: white;
+	color:  hsl(215, 51%, 70%);
+	background-color: hsl(216, 50%, 16%);
+	font-family: Outfit;
+	font-size: 400;
 }
 
 .ethImage
@@ -45,34 +65,40 @@ p
 	margin: auto;
   	display: block;
 	width: 22rem;
-	background-color: white;
+	background-color: hsl(216, 50%, 16%);
 	/*padding*/
 }
 
 #first
 {
 	border-radius: 1rem;
-	background-color: white;
+	background-color: hsl(216, 50%, 16%);
 }
 
 #second
 {
-	background-color: white;
+	background-color:hsl(216, 50%, 16%);
 }
-
 
 .creator
 {
 	padding-left:10%;
-	
 }
 
 #bottom
 {
 	display: flex;
 	justify-content: start;
-	background-color: white;
+	margin-top: 5%;
+	background-color: hsl(216, 50%, 16%);
 	border-radius: 1rem;
+	color: hsl(215, 51%, 70%);
+	font-family: Outfit;
+}
+
+#bottom .creatorName
+{
+	color: white;
 }
 
 footer
@@ -83,11 +109,14 @@ footer
 }
 .creatorImage
 {
-	padding-top: 2%;
-	padding-left: 10%;
+	/* padding-top: 2%; */
+	/* padding-left: 10%; */
 	width: 35px;
 	height: 35px;
-	background-color: white;
+	background-color: hsl(216, 50%, 16%);
+	border-radius: 50%;
+	border: 2px solid white;
+	margin-left: 10%;
 }
 
 #details
@@ -96,19 +125,28 @@ footer
 	justify-content: space-between;
 	padding-left: 10%;
 	padding-right: 10%;
-	background-color: white;
+	background-color: hsl(216, 50%, 16%);
 }
 
 #details p
 {
 	padding-left: 10px;
+	color: hsl(178, 100%, 50%);
+	font-family: Outfit;
+	font-weight: bold;
+}
+
+#details p.countdown
+{
+	color:  hsl(215, 51%, 70%);
+	font-weight: normal;
 }
 
 .price
 {
 	display: flex;
 	justify-content: start;
-	background-color: white;
+	background-color:  hsl(216, 50%, 16%);
 }
 
 .days
@@ -116,14 +154,14 @@ footer
 	display: flex;
 	justify-content: start;
 	/* justify-content: space-between; */
-	background-color: white;
+	background-color:  hsl(216, 50%, 16%);
 }
 
 /* disp*/
 .ethIcone
 {
 	padding-top: 10px;
-	background-color: white;
+	background-color:  hsl(216, 50%, 16%);
 	width: 15px;
 	height: 25px;
 }
@@ -131,7 +169,12 @@ footer
 .clockIcone
 {
 	padding-top: 10px;
-	background-color: white;
+	background-color:  hsl(216, 50%, 16%);
 	width: 25px;
 	height: 25px;
+}
+
+.line {
+	width: 20rem;
+	border-color: hsl(217, 49%, 8%) ; 
 }
