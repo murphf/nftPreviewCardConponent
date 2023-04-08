@@ -19,7 +19,6 @@ main
 	margin: auto;
 	margin-top: 100px;
 	border-radius: 1rem;
-
 }
 
 /*---- image part ----*/
@@ -28,6 +27,7 @@ main
 	padding-top: 2%;
 	border-radius: 1rem;
 	background-color: hsl(216, 50%, 16%);
+	position: relative;
 }
 
 /* principal image */
@@ -40,11 +40,24 @@ main
 	background-color: hsl(216, 50%, 16%);
 }
 
-/* hovering effect: blue filter + svg icon (??)*/
-.ethImage:hover 
-{
+/* hovering effect: blue filter + svg icon */
+.ethImage:hover {
 	filter: brightness(121%) contrast(70%) hue-rotate(122deg) saturate(127%) grayscale(36%) sepia(60%) url(#svgTint);
 	position: relative;
+}
+.overlay
+{
+	background-color: hsl(216, 50%, 16%);;
+}
+
+/* add the SVG icon to the image */
+.overlay::before{
+	content: url('./images/icon-view.svg'); /* replace the path with your own */
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
 }
 
 /*---- title + text ----*/
@@ -179,7 +192,6 @@ p
 /*--- footer part ---*/
 footer
 {
-	/*position: absolute;*/
 	margin-top: 50px;
 	text-align: center;
 	color: hsl(178, 100%, 50%);
