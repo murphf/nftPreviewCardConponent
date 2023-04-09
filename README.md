@@ -1,4 +1,4 @@
-# my QR code component solution
+# my NFT preview card component solution
 
 ### Challenge by Frontend Mentor
 <a href="https://www.frontendmentor.io/profile/murphf" target="_blank">
