@@ -40,17 +40,10 @@ main
 	background-color: hsl(216, 50%, 16%);
 }
 
-
 /* hovering effect: blue filter + svg icon */
 .ethImage:hover {
 	filter: brightness(121%) contrast(70%) hue-rotate(122deg) saturate(127%) grayscale(36%) sepia(60%) url(#svgTint);
 }
-/* .overlay
-{
-	background-color: hsl(216, 50%, 16%);
-	filter: brightness(121%) contrast(70%) hue-rotate(122deg) saturate(127%) grayscale(36%) sepia(60%) url(#svgTint);
-
-} */
 
 /* add the SVG icon to the image */
 .overlay{
@@ -69,7 +62,6 @@ main
 	z-index: 1;
 	opacity: 1;
 }
-
 
 /*---- title + text ----*/
 #second
@@ -130,7 +122,6 @@ p
 	color:  hsl(215, 51%, 70%);
 	font-weight: normal;
 }
-
 
 .price
 {
